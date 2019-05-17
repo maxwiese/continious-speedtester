@@ -15,10 +15,10 @@ print("results ...")
 results = speedtester.results.dict()
 
 print("download:")
-print(results['download'] + " bits/s")
+print(str(results['download']) + " bits/s")
 
 print("upload:")
-print(results['upload'] + " bits/s")
+print(str(results['upload']) + " bits/s")
 
 print("ping:")
-print(results['ping'] " ms")
+print(str(results['ping']) + " ms")
