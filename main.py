@@ -4,7 +4,7 @@ import time
 import speedtest
 import paho.mqtt.client as mqtt
 
-broker_url = "mosquitto"
+broker_url = "ubuntu"
 time_to_sleep = 60 * 5
 
 
@@ -52,9 +52,9 @@ def measure_internet_connection(speedtester):
     results = speedtester.results.dict()
 
     return {
-        'download': str(results['download']),
-        'upoload': str(results['upload']),
-        'ping': str(results['ping'])
+        'download': results['download'],
+        'upoload': results['upload'],
+        'ping': results['ping']
     }
 
 
