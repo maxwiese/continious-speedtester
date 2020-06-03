@@ -4,7 +4,7 @@ import time
 import speedtest
 import paho.mqtt.client as mqtt
 
-broker_url = "ubuntu"
+broker_url = "mosquitto"
 time_to_sleep = 60 * 5
 
 
